@@ -6,3 +6,34 @@
     font-family: 'Open sans', sans-serif;
 }
 
+body {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_container {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1 / 1.2;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+}
+
+.img_container .circle {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img_container .person_img {
+    position: absolute;
+    width: 100%;
+    transform: scale(1.1);
+}
